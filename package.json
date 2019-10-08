@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all --parallel watch:server watch:build",
     "watch:build": "webpack",
-    "watch:server": "nodemon"
+    "watch:server": "nodemon server/front-end-only.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "body-parser": "^1.19.0",
     "braintree": "^2.20.0",
     "braintree-web": "^3.53.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "node-static": "^0.7.11",

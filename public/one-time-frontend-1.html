@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1. One time frontend only</title>
+  </head>
+  <body>
+    <div id="paypal-button"></div>
+
+    <!-- Load the required checkout.js script -->
+    <script
+      src="https://www.paypalobjects.com/api/checkout.js"
+      data-version-4
+    ></script>
+
+    <!-- Load the required Braintree components. -->
+    <script src="https://js.braintreegateway.com/web/3.39.0/js/client.min.js"></script>
+    <script src="https://js.braintreegateway.com/web/3.39.0/js/paypal-checkout.min.js"></script>
+
+    <script src="./dist/built-one-time-frontend-1.js"></script>
+  </body>
+</html>

@@ -1,12 +1,12 @@
 import paypal from 'paypal-checkout'
+import { CLIENT_ID } from './config'
 
 paypal.Button.render(
   {
     // configure environment
     env: 'sandbox',
     client: {
-      sandbox:
-        'Abi4btry_a2v30yxEbmatjdnz_AQ-hdV6D3iN_Zf1JqftASHHMsrp2YSg2LH7khB0F82PrTsv5v9OBwB'
+      sandbox: CLIENT_ID
     },
     locale: 'en_US',
     style: {
